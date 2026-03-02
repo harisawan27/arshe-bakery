@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ── Brand color palette: Terracotta ─────────────────────────────────────── */
+@theme {
+  --color-terra-50:  #fdf3ef;
+  --color-terra-100: #fbe1d5;
+  --color-terra-200: #f6bfa6;
+  --color-terra-300: #ee9470;
+  --color-terra-400: #e46640;
+  --color-terra-500: #c8441e;
+  --color-terra-600: #a63618;
+  --color-terra-700: #862c15;
+  --color-terra-800: #6a2312;
+  --color-terra-900: #571c0f;
 }
 
+/* ── Fonts: map Tailwind font-serif / font-sans to next/font variables ────── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-playfair);
+  --font-sans:  var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Keyframes ────────────────────────────────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0);    }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes counter-pop {
+  0%   { transform: scale(1.6); }
+  60%  { transform: scale(0.9); }
+  100% { transform: scale(1);   }
+}
+
+@keyframes cart-in {
+  from { transform: translateY(110%) scale(0.97); opacity: 0; }
+  to   { transform: translateY(0)    scale(1);    opacity: 1; }
+}
+
+/* ── Custom utilities ─────────────────────────────────────────────────────── */
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+@utility image-shimmer {
+  background: linear-gradient(90deg, #f0ebe5 0%, #e2d9cf 50%, #f0ebe5 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite linear;
+}
+
+@utility animate-slide-up {
+  animation: slide-up 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@utility animate-fade-in {
+  animation: fade-in 0.22s ease forwards;
+}
+
+@utility animate-counter-pop {
+  animation: counter-pop 0.28s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@utility animate-cart-in {
+  animation: cart-in 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+html, body {
+  background-color: theme(--color-stone-300);
 }
