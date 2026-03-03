@@ -520,7 +520,7 @@ function DesktopSidebar() {
           <div className="pointer-events-none absolute -top-8 -right-8 h-32 w-32 rounded-full bg-terra-400/20 blur-2xl" />
           <div className="relative">
             <span className="inline-block rounded-full border border-terra-200 bg-terra-50 px-2.5 py-0.5 text-[9px] font-semibold uppercase tracking-[0.15em] text-terra-600">
-              Est. Damascus · 1952
+              Est. Amman · 1952
             </span>
             <h2 className="mt-2 font-serif text-4xl font-bold tracking-tight text-stone-800">arshé</h2>
             <p className="mt-1 font-serif text-xs italic text-stone-500">
@@ -540,7 +540,7 @@ function DesktopSidebar() {
             Our Story
           </h3>
           <p className="text-xs leading-relaxed text-stone-500">
-            Three generations of baking in Old Damascus since 1952. Every za'atar leaf
+            Three generations of baking in Old Amman since 1952. Every za'atar leaf
             hand-picked, every ring pulled fresh from our stone oven — a ritual
             unchanged since your grandmother's time.
           </p>
@@ -580,7 +580,7 @@ function DesktopSidebar() {
           </h3>
           <address className="not-italic text-xs leading-loose text-stone-500">
             14 Straight Street, Old City<br />
-            <span className="font-medium text-stone-700">Damascus, Syria</span>
+            <span className="font-medium text-stone-700">Amman, Jordan</span>
           </address>
           <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
             className="mt-1 inline-flex items-center gap-1 text-[10px] text-terra-500 hover:text-terra-600 transition-colors"
@@ -652,7 +652,7 @@ function SiteFooter() {
             {/* Col 1 — Brand */}
             <div className="text-center lg:text-left">
               <span className="inline-block rounded-full border border-terra-800 bg-terra-900/40 px-3 py-0.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-terra-400">
-                Est. Damascus · 1952
+                Est. Amman · 1952
               </span>
               <h2 className="mt-3 font-serif text-5xl font-bold tracking-tight text-stone-100 lg:text-4xl">arshé</h2>
               <p className="mt-2 font-serif text-sm italic text-stone-400">
@@ -683,7 +683,7 @@ function SiteFooter() {
                 Our Story
               </h3>
               <p className="text-sm leading-relaxed text-stone-400">
-                Born in the narrow lanes of Old Damascus in 1952, arshé has been kneading
+                Born in the narrow lanes of Old Amman in 1952, arshé has been kneading
                 dough and grinding spices for three generations. Every za'atar leaf is
                 hand-picked, every sesame ring pulled fresh from our stone oven — a ritual
                 unchanged since your grandmother's time.
@@ -725,7 +725,7 @@ function SiteFooter() {
               <address className="not-italic text-xs leading-loose text-stone-500">
                 14 Straight Street<br />
                 Old City<br />
-                <span className="font-medium text-stone-300">Damascus, Syria</span>
+                <span className="font-medium text-stone-300">Amman, Jordan</span>
               </address>
               <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
                 className="mt-2 inline-flex items-center gap-1 text-[10px] text-terra-600 hover:text-terra-400 transition-colors"
@@ -752,7 +752,7 @@ function SiteFooter() {
             <p className="text-xs text-stone-600">
               © {new Date().getFullYear()} arshé. All rights reserved.
             </p>
-            <p className="text-xs text-stone-600">Baked with love in Damascus 🌿</p>
+            <p className="text-xs text-stone-600">Baked with love in Amman 🌿</p>
           </div>
 
         </div>
@@ -840,7 +840,7 @@ export default function Home() {
             <div className="pointer-events-none absolute -bottom-8 -left-8 h-40 w-40 rounded-full bg-amber-300/25 blur-2xl" />
             <div className="relative text-center">
               <span className="inline-block rounded-full border border-terra-200 bg-terra-50 px-3 py-0.5 text-[10px] font-semibold uppercase tracking-[0.18em] text-terra-600">
-                Est. Damascus · 1952
+                Est. Amman · 1952
               </span>
               <h1 className="mt-3 font-serif text-6xl font-bold tracking-tight text-stone-800">arshé</h1>
               <p className="mt-2 font-serif text-sm italic text-stone-500">
