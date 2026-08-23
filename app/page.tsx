@@ -522,7 +522,7 @@ function DesktopSidebar() {
             <span className="inline-block rounded-full border border-terra-200 bg-terra-50 px-2.5 py-0.5 text-[9px] font-semibold uppercase tracking-[0.15em] text-terra-600">
               Est. Amman · 1952
             </span>
-            <h2 className="mt-2 font-serif text-4xl font-bold tracking-tight text-stone-800">arshé</h2>
+            <h2 className="mt-2 font-serif text-4xl font-bold tracking-tight text-stone-800">Freshly baked, warmly shared.</h2>
             <p className="mt-1 font-serif text-xs italic text-stone-500">
               A taste of yesterday, baked for today.
             </p>
